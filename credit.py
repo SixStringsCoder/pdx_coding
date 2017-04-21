@@ -22,25 +22,59 @@ def validate(account_number):
    :return: boolean 
    """
 
-   check_digit = account_number.pop()
+"""
+refactored
+"""
 
+
+def validate(account_number):
+   # Write your code here.
+
+   check_digit = account_number.pop()
    account_number.reverse()
 
    for index, number in enumerate(account_number):
       if index % 2 == 0:
-         refract = account_number[index] * 2
+         refract = number * 2
          if refract > 9:
-            refract - 9
+            refract -= 9
       else:
-         refract = account_number[index]
+         refract = number
 
-   grand_sum = str(sum(account_number))
+   second_digit = int(str(sum(account_number))[1])
 
-   sliced_digit = grand_sum[1:]
-
-   if int(sliced_digit) == check_digit:
+   if second_digit == check_digit:
       print('Valid!')
    else:
       print('Invalid!')
 
 
+validate([6, 5, 1, 6, 4, 3, 7, 5, 1, 6, 4, 9, 3, 8, 5, 4])
+
+
+
+#
+# """
+# first incarnation
+# """
+#
+# check_digit = account_number.pop()
+#
+# account_number.reverse()
+#
+# for index, number in enumerate(account_number):
+#    if index % 2 == 0:
+#       refract = account_number[index] * 2
+#       if refract > 9:
+#          refract -= 9
+#    else:
+#       refract = account_number[index]
+#
+# grand_sum = str(sum(account_number))
+#
+# sliced_digit = grand_sum[1:]
+#
+# if int(sliced_digit) == check_digit:
+#    print('Valid!')
+# else:
+#    print('Invalid!')

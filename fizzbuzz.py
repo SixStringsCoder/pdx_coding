@@ -54,7 +54,7 @@ def joined_buzz(n):
         c += 1
     string0rama = ' '.join(fizzy_lister)
 
-    print("'" + string0rama + "'")
+    return str(string0rama)
 
 
 

@@ -47,8 +47,7 @@ def binary_guess(guesses_allowed, low_num, high_num, correct_num):
 
 
 
-binary_guess(16, 1, 100000, 67190)
-
+binary_guess(16, 1, 100000, 23987)
 
 
 

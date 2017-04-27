@@ -16,19 +16,20 @@ import random
 
 
 def randy_num(level_tries):
-    chosen = random.randint(1, 2000000000)
-    pick = int(input("Guess a number between 1 and 2 billion.\n Type it here without commas  >> "))
+    chosen = random.randint(1, 2000)
+    pick = int(input("Guess a number between 1 and 2 thousand.\n Type it here without commas  >> "))
     guesses = 0
 
     while guesses < level_tries:
         guesses += 1
-        if pick < chosen:
+        if pick == chosen:
+            input(f"That's it! The number is {pick}. You got it in {guesses} attempt(s)!")
+            break
+        elif pick < chosen:
             pick = int(input(f"Too low! Guess higher!---[Guess Count = {guesses}] >> "))
         elif pick > chosen:
             pick = int(input(f"Too high! Guess lower!---[Guess Count = {guesses}] >> "))
-        elif pick == chosen:
-            input(f"That's it! The number is {pick}. You got it in {guesses} attempt(s)!")
-            break
+
     else:
         input(f"Game over. The number is {chosen}")
 

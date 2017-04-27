@@ -3,7 +3,7 @@ import random
 
 def binary_guess(guesses_allowed, low_num, high_num, correct_num):
     """
-    computer makes based on binary search, initated by randomint
+    computer makes guess based on binary search, initated by randomint
 
     :return: integer
     """
@@ -47,8 +47,7 @@ def binary_guess(guesses_allowed, low_num, high_num, correct_num):
 
 
 
-binary_guess(16, 1, 100000, 23987)
-
+binary_guess(guesses_allowed=16, low_num=1, high_num=100000, correct_num=23987)
 
 
 

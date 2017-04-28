@@ -11,7 +11,7 @@
 
 """
 
-def shrink(string_sum):
+def shrink(string_sum: str): -> int
     """
     write a function to sum all numbers in a string until output is just 
     one digit in length.

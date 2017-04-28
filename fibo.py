@@ -14,6 +14,7 @@
 
 
 def fibo(ceil_value):
+    """output a list of fibbonacci numbers up to the ceiling _value"""
     a, b = 0, 1
     fibo_list = list()
 

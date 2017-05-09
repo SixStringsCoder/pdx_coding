@@ -5,7 +5,6 @@ Print out a summary of the data:
 
 """
 
-
 import os
 import chalk
 
@@ -19,6 +18,8 @@ def stat_printer(rain_stat: tuple) -> None:
     date, rain_amount = rain_stat[0], int(rain_stat[1][0] / 24)
     year, month, day = date[-4:], date[3:6].capitalize(), date[1:2]
 
+
+
     chalk.red(f"{month}. {day}, {year} had the most rain with {rain_amount} hunderedths of an inch on an hourly average.")
     chalk.green(f"The year with the most rain was {year} with {rain_amount} inches of rain.")
 
@@ -27,8 +28,9 @@ def stat_finder(cleaned_data: dict) -> tuple :
     """sort and funnel the results to return"""
     most_rain = max(cleaned_data.items(), key=lambda t: t[1][0])
     # least_rain = min(cleaned_data.items(), key=lambda t: t[1][0])
+    most_rain_year = sum(cleaned_data[])
 
-    return most_rain
+    print(most_rain_year)
 
 
 def find_file(path: str) -> str:
@@ -47,6 +49,7 @@ def cleaner(raw_raindata: str) -> dict:
     single_lines = [line.split() for line in no_header if line != '']
     cleanest = [line for line in single_lines if '-' not in line]
     date_to_dict = {data[0]: (int(data[1]), list(map(int, data[2:]))) for data in cleanest}
+    # year_to_dict = {data[-4:]: (int(data[1]), list(map(int, data[2:]))) for data in cleanest}
 
     return date_to_dict
 

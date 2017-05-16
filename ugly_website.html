@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steve's Ugly Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Ravi+Prakash" rel="stylesheet">
+
+    <style>
+        body{
+          background-color: pink;
+        }
+
+
+        h1 {
+          font-size: 5em;
+          text-shadow: 10px 10px 20px green;
+          text-decoration: underline;
+          font-family: 'Ravi Prakash', cursive;
+        }
+
+        hr {
+          background-color: red;
+        }
+
+        p {
+          font-size: 25px;
+          font-family: "Comic Sans MS";
+          color: yellow;
+          text-shadow: 1px 2px 50px black;
+        }
+
+        audio {
+         margin-top: 30px;
+         margin-bottom: -20px
+
+        }
+
+        button {
+          width: 200px;
+          height: 100px;
+          border-radius: 45px;
+          background-color: red;
+          font-size: 2em;
+          color: white;
+          padding: 10px 10px;
+          box-shadow: 2px 2px 3px black;
+          margin: 20px
+        }
+
+        button:active {
+          box-shadow: 1px 1px 1px grey;
+        }
+
+        #happy {
+          width: 200px;
+          height: 100px;
+          border-radius: 45px;
+          background-color: green;
+          font-size: 2em;
+          color: white;
+          padding: 10px 10px;
+          box-shadow: 2px 2px 3px black;
+          margin-bottom: 20px
+        }
+
+        form {
+          text-align: left
+        }
+        input {
+          margin: 15px;
+        }
+
+        input[type="checkbox"] {
+          margin: 20px;
+        }
+
+        blockquote {
+          font-size: 2em;
+          text-align: justify;
+          width: 30%;
+          font-family: 'Barrio', cursive;
+          color: lightblue;
+          text-shadow: 1px 1px 30px black;
+          border: 5px dotted green;
+          padding: 20px;
+
+        }
+
+        figure {
+          margin-bottom: 100px;
+        }
+
+        img {
+          width: 20%;
+          border-radius: 25px;
+          box-shadow: 10px 2px 3px orange;
+        }
+
+        .sad_pics {
+          text-align: center;
+        }
+
+
+        .topsongs {
+          margin: 20px 700px;
+          padding: 10px;
+          background: url("https://img.clipartfest.com/c2a1f27921f9dcbe93efe0b98d437cd8_rock-n-roll-image-free-rock-n-roll-clip-art-images_768-768.jpeg");
+
+        }
+
+
+        hl {
+          font-size: 3em;
+          color: white;
+        }
+
+        ol {
+          line-height: 3vw;
+          color: yellow;
+          font-size: 1vw;
+          text-shadow: 150px 10px black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1 style="text-align:center">Break up poems for the distraught</h1>
+
+        <hr />
+
+
+        <blockquote>We have all been broken hearted at one time or another. Losing someone we love will never be easy. The break ups end bad and our love is soon lost. Here is some lost love poetry and words about breaking up.</blockquote>
+
+
+
+      <section>
+          <figure>
+              <img class="sad_pics"  src="http://d3dytsf4vrjn5x.cloudfront.net/51584/300x250/10f1c80909e31c3f47b09dc5d1cc0976.jpg">
+                  <figcaption>Eleanor Rigby from Wales is very sad!</figcaption>
+
+                <audio controls>
+                <source src="http://soundbible.com/mp3/Sad-SoundBible.com-759843766.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+          </figure>
+
+    </section>
+
+    <section>
+        <figure>
+            <img src="http://1.bp.blogspot.com/_08OqYD2I29c/S7k4y1CyTSI/AAAAAAAAABg/ghGJM8ieNJE/s400/sad.png">
+            <figcaption>Little Peter just pooped his pants.  He is very, very sad!</figcaption>
+
+            <audio controls>
+            <source src="http://soundbible.com/mp3/Baby Crying-SoundBible.com-1143552027.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </figure>
+    </section>
+
+    <section>
+        <figure>
+            <img src="http://www.healthcomu.com/wp-content/uploads/2014/12/Seasonal-Affective-Disorder.jpg" width="20%">
+            <figcaption>Betty's burrito just burned in the microwave.  She is bummed and a little bit angry, too.</figcaption>
+
+             <audio controls>
+              <source src="http://soundbible.com/mp3/Whimper-SoundBible.com-1729765971.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </figure>
+    </section>
+    </center>
+
+    <hr>
+
+    <aside class="formfactor">
+          <h3>Are you sad, too? Take our quiz. <br>Check all that are true.</h3>
+
+          <input type="checkbox">I have pooped my pants in the past.</input><br>
+          <input type="checkbox">I have burned a burrito in the past.</input><br>
+          <input type="checkbox">I listen to Celin Dion.</input><br>
+        <form>
+          Type your feelings about feelings in the space of this box.
+          <input type="text" name="feelingbox" placeholder="Vent here!"><br>
+          <strong>Choose one:</strong><br>
+          <input type="radio" value="sad" name="sad">sad<br>
+          <input type="radio" value="sad" name="sad">unhappy<br>
+          <input type="radio" value="sad" name="sad">seeking medical marijuana
+        </form>
+
+
+        <section>
+            <h3>If you answered any of the choices above or typed in the text box, check the button below." </h3>
+            <button>I'm Sad, Too!</button>
+            <button id="happy">Actually, I'm happy!</button>
+        </section>
+    </aside>
+
+    <section class='topsongs'>
+        <hl>Top Ten Sad Songs</hl>
+        <ol>
+          <li>R.E.M. - Everybody Hurts</li>
+          <li>Someone Like You - Adele</li>
+          <li>Johnny Cash - Hurt</li>
+          <li>Passenger - Let Her Go</li>
+          <li>Gary Jules  - Mad World</li>
+        </ol>
+    </section>
+
+</body>
+</html>

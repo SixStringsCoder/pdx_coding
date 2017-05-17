@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        form {
+          margin: .5em 0 2em;
+          background: #FFD200;
+          border: 5px solid #49FF04;
+          padding: 1em;
+        }
+
+
+        .descr {
+          line-height: 40px;
+        }
+
+        label {
+          font-family: "Helvetica", san-serif;
+          font-size: 1.5em;
+          margin-left: 1em;
+          color: #FF5E00;
+
+          font-weight: bold;
+        }
+
+        input[type=text] {
+          width: 40em;
+          height: 3em;
+          margin: .4em 0 .5em 1em;
+          padding: 10px;
+          border-radius: 25px;
+
+        }
+
+        select {
+          width: 20em;
+          height: 3em;
+
+          margin: .4em 0 2em 2em;
+        }
+
+        input, textarea {
+          margin: .4em 0 2em 2em;
+        }
+
+        textarea {
+          width: 43em;
+          height: 12em;
+          border-radius: 1em;
+          padding: 5px;
+        }
+
+        input[type:checkbox] {
+          margin-right: 20px;
+          width: 100px;
+        }
+
+        button {
+          font-size: 2em;
+          color: #fff;
+          width: 6em;
+          height: 6em;
+          margin: 1em 3em;
+          border-radius: 100%;
+          background-color: brown;
+          transition: background-color, 1s,
+          color, 1s;
+        }
+
+        button:hover {
+          color: black;
+          background-color: #49FF04;
+          cursor: pointer;
+        }
+
+        input[type=submit] {
+          width: 6em;
+          height: 6em;
+          border-radius: 100%;
+          background-color: #DBE803;
+          font-size: 2em;
+          margin: 1em 3em;
+          cursor: pointer;
+          transition: width, 1s, height, 1s,
+                      background-color, 1s,
+                      margin, 1s, color, 1s;
+        }
+
+        input[type=submit]:hover {
+          width: 8em;
+          height: 8em;
+          background-color: brown;
+          margin: 1em 1.9em;
+          color: #fff;
+        }
+
+        input[type=file] {
+          width: 400px;
+          font-size: 15px;
+          margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+
+  <label>
+    <span class="descr">Describe what you ate for dinner.</span>
+    <br/>
+  <input type="text" name="describe" required pattern="" placeholder="Type here">
+    </label>
+    <br>
+
+
+  <label>
+    <span class="descr">Check all the items you ate.</span>
+  </label>
+    <br/>
+  <input type="checkbox" name="meat" value="meat"> meat
+  <input type="checkbox" name="cheese" value="cheese"> cheese
+  <input type="checkbox" name="potatoes" value="potatoes"> potatoes
+  <input type="checkbox" name="broccoli" value="broccoli"> broccoli
+    <br/>
+
+
+  <label>
+    <span class="descr">Indicate eating preference.</span>
+  </label>
+    <br>
+    <input type="radio" name="choice" value="veg"> vegetarian
+    <input type="radio" name="choice" value="vegan"> vegan
+    <input type="radio" name="choice" value="fruitarian"> fruitarian
+    <input type="radio" name="choice" value="meatarian"> meatarian
+    <br/>
+
+
+  <label>
+    <span class="descr">Select your favorite ice cream flavor.</span>
+  </label>
+    <br>
+    <select name="icecream" form="flavorsform">
+      <option value="pbchoc">peanut butter chocolate chunk</options>
+      <option value="stberry">strawberry</options>
+      <option value="tofcof">toffee coffee</options>
+      <option value="saltcara">salted caramel</options>
+      <option value="chocchipsw">chocolate chip swirl</options>
+    </select>
+    <br/>
+
+
+  <label>
+    <span class="descr">Write about your most memorable dinner ever!</span>
+  </label>
+      <br/>
+      <textarea name="dinner_memory" required pattern="" placeholder="Write here"></textarea>
+      <br>
+
+
+  <button>You<br>Hungry?</button>
+    <br/>
+
+
+  <input type="submit" value="You Full?"><br>
+
+  <label>&#9932; Upload an image of your best pair of chopsticks! &#9932;<br>
+    <input type="file">
+  </label>
+</form>
+
+</body>
+</html>

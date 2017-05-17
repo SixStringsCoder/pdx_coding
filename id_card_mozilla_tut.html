@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID Card - HTML-CSS</title>
+
+    <style>
+        #bg {
+            position: absolute;
+            width: 50.5em;
+            height: 25em;
+            background-color: #bbb;
+            z-index: 1;
+        }
+
+        #colorbg {
+          position: absolute;
+          top: 25px;
+          left: 25px;
+          width: 46em;
+          height: 21em;
+          padding: 15px;
+          background-color: red;
+          border: 3px solid black;
+          border-radius: 25px;
+          z-index: 2;
+        }
+
+        #colorstrip {
+            position: absolute;
+            top: 6.4em;
+            left: 0;
+            width: 47.5em;
+            height: 12em;
+            background-color: DarkRed;
+            z-index: 3;
+        }
+
+        #photo {
+          position: absolute;
+          top: 6.4em;
+          left: 35.4em;
+          width: 26%;
+          z-index: 4;
+        }
+
+        name {
+          font-size: 2.5em;
+          font-family: "Tahoma", san-serif;
+          font-weight: bold;
+        }
+
+        address {
+          position: absolute;
+          margin: 62px 0 0 10px;
+          color: #fff;
+          font-size: .9em;
+          font-style: normal;
+          line-height: 150%;
+          font-family: "Tahoma", san-serif;
+          z-index: 5;
+        }
+
+        skills {
+          position: absolute;
+          margin: 15.8em 0 0 -3em;
+          font-size: 1.2em;
+          font-family: "Tahoma", san-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="bg"></div>
+
+<div id="colorbg">
+  <div id="pers_info">
+      <name>Melon McSmoothville</name>
+      <address>34 Berry Lane<br>
+      Las Frutas <br>Grandes<br>
+      Mexico <br>97230<br>Tel: 1-765-234-4567<br>
+        email: fruit@gmail.com</address>
+
+      <img id="photo" src="http://4.bp.blogspot.com/_Agq6EQxROnA/TTTChZYsnaI/AAAAAAAAAJQ/LhypbU9JoXU/s1600/Ben%2BKingsley.jpg">
+
+      <skills>Python | Django | Web | Database | Games </skills>
+
+</div>
+
+
+<div id="colorstrip"></div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+#containerBIG {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+#container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+.col {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
+
+
+.top {
+    background-color: blue;
+    box-shadow: 2px 1px 10px black;
+}
+
+.bot {
+    background-color: red;
+    box-shadow: 2px 1px 10px black;
+}

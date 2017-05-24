@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>El Burrito Grande Order Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css"  href="css/styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>El Burrito Grande Order Form</h1>
+
+        <figure>
+            <img src="http://assets.kraftfoods.com/recipe_images/opendeploy/113694_640x428.jpg">
+            <figcaption>Would you like fries with that?</figcaption>
+        </figure>
+
+        <section>
+            <h2>Customize Your Burrito</h2>
+            <h3>Your Burrito's Deals</h3>
+            <h4>Included in your six bucks</h4>
+
+            <form id="menu">
+                <ul>
+                    <hl><strong>Tortilla:</strong></hl>
+                    <li><input type="radio" name="menu" value="white flour">
+                    <label>White Flour</label></li>
+                    <li><input type="radio" name="menu" value="wheat flour">
+                    <label>Wheat Flour</label></li>
+                    <li><input type="radio" name="menu" value="spinach tortilla">
+                    <label>Spinach</label></li>
+                    <li><input type="radio" name="menu" value="corn tortilla">
+                    <label>Corn (gluten-free)</label></li>
+                </ul>
+
+
+                <ul>
+                    <hl><strong>Meat:</strong></hl>
+                    <li><input type="checkbox" name="menu" value="carnitas">
+                    <label>Carnitas</label></li>
+                    <li><input type="checkbox" name="menu" value="chicken">
+                    <label>Chicken</label></li>
+                    <li><input type="checkbox" name="menu" value="sofritas">
+                    <label>Sofritos (tofu)</label></li>
+                    <li><input type="checkbox" name="menu" value="bean">
+                    <label>Bean</label></li>
+                    <li><input type="checkbox" name="menu" value="cheese">
+                    <label>Cheese</label></li>
+                    <li><input type="checkbox" name="menu" value="salsa">
+                    <label>Salsa</label></li>
+                    <li><input type="checkbox" name="menu" value="sour cream">
+                    <label>Sour Cream</label></li>
+                </ul>
+
+
+                <ul>
+                    <hl><strong>Extras @ $0.50 each:</strong></hl>
+                    <li><input type="checkbox" name="menu" value="guacamole">
+                    <label>Guacamole</label></li>
+                    <li><input type="checkbox" name="menu" value="scrambled-eggs">
+                    <label>Scrambled Eggs</label></li>
+                    <li><input type="checkbox" name="menu" value="home-fried-potatoes">
+                    <label>Home Fried Potatoes</label></li>
+                    <li><input type="checkbox" name="menu" value="sun-dried-tomatoes">
+                    <label>Sun-dried tomatoes</label></li>
+                    <li><input type="checkbox" name="menu" value="olives">
+                    <label>Olives</label></li>
+                    <li><input type="checkbox" name="menu" value="sauteed-mushrooms">
+                    <label>Sautéed Mushrooms</label></li>
+                    <li><input type="checkbox" name="menu" value="sauteed-onions">
+                    <label>Sautéed Onions</label></li>
+                    <li><input type="checkbox" name="menu" value="jalapeno-peppers">
+                    <label>Jalapeño Peppers</label></li>
+                </ul>
+            </form>
+        </section>
+
+        <section>
+            <h2>Your Details</h2>
+            <form id="customer-details">
+
+                <label>Name:
+                    <input type="text" size="15" maxlength="50">
+                </label>
+                <label>Credit Card Number
+                    <input type="number" nme="cc_num">
+                </label>
+                <label>CVV
+                <input type="number" name="cvv">
+                </label>
+                <label>Zip Code
+                    <input type="number" name="zip">
+                </label>
+
+                <label>Would you like that delivered?
+                    <input type="radio" name="deliver">Delivery
+                    <input type="radio" name="deliver">Pickup
+                </label>
+
+                <label>I agree to the Terms & Conditions.
+                    <input type="checkbox">
+                </label>
+
+                <button>Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Order Total</h2>
+            <ul>
+                <li>White Tortilla</li>
+                <li>Beans</li>
+                <li>Cheese</li>
+                <li>Salsa</li>
+                <li>Sour Cream</li>
+            </ul>
+
+            <p><strong>Total:</strong> $6.00</p>
+            <p>copyright © 2017 All rights reserved.</p>
+        </section>
+    <script></script>
+    </body>
+
+</html>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600');
+
+body, html {
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+.btn {
+    font-size:20px;
+    background-color:#fff;
+    padding:20px;
+    color:#333;
+    border-radius: 20px;
+}
+
+.wrapper:not(.main) {
+    width: 24%;
+}
+
+h1 {
+    margin:0;
+    font-size: 3em;
+}
+
+.wrapper {
+    height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100px;
+    flex-direction:column;
+    background:#00A5CF;
+    border:solid 0.5px;
+}
+
+section {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.main {
+    background-color: #4802A9;
+    padding-top: 20px;
+}
+
+
+
+/* --------------------
+Assignment starts here 
+----------------------*/
+
+
+/* BUTTON 1 */
+.btn-1Wrapper .btn {
+    border: 1px solid #fff;
+    transition: box-shadow 1s, border 1s ease-in;
+    
+}
+
+.btn-1Wrapper .btn:hover {
+    border: 2px solid #fff;
+    box-shadow:  inset 0 0 0 5px #00A5CF;
+}
+
+
+/* BUTTON 2 */
+.btn-2Wrapper {
+    background-color: #CC9626;
+}
+
+.btn-2Wrapper .btn {
+    transition: border-radius 1s;
+}
+
+.btn-2Wrapper .btn:hover {
+    border-radius: 0;
+}
+
+/* BUTTON 3 */
+.btn-4Wrapper {
+    background-color: #CF0CE8;
+}
+
+.btn-4Wrapper .btn:hover {
+    color: #EE6352;
+    animation: btnGrow 1s cubic-bezier(0, 0.19, 0.28, 1) alternate;
+}
+
+@keyframes btnGrow {
+    50% {font-size: 30px;}
+    100% {font-size: 20px;}
+}
+
+
+/* BUTTON 4 */
+.btn-5Wrapper {
+    background-color: #38FF2F;
+}
+
+.btn-5Wrapper .btn {
+    transition: .1s;
+}
+
+.btn-5Wrapper .btn:hover {
+    border: solid 3px #FF7816;
+    border-style: dashed;
+}
+
+
+
+
+/* BUTTON 5 */
+.btn-3Wrapper {
+    background-color: #7F5231;
+}
+
+.btn-3Wrapper .btn {
+    box-shadow: 0 5px 0 grey;
+    transition: .2s;
+}
+
+.btn-3Wrapper .btn:active {
+    box-shadow: 0 2px 0 grey;
+}
+
+
+/* BUTTON 6 */
+.btn-6Wrapper {
+    background-color: #E84608;
+}
+
+.btn-6Wrapper .btn {
+    box-shadow: 0 8px 10px -1px rgba(0, 0, 0, .3);
+    border-bottom: 4px solid #ddd;
+    transition: box-shadow 1s, border-bottom 1s;
+}
+
+.btn-6Wrapper .btn:active {
+    box-shadow: 0 2px 2px grey;
+    border-bottom: 3px solid #ddd;
+}
+
+
+/* BUTTON 7 */
+.btn-7Wrapper {
+    background-color: #FFC006;
+}
+
+.btn-7Wrapper .btn {
+    border-radius: 0;
+    box-shadow: 0;
+    transition: transform .5s, box-shadow .5s;
+}
+
+.btn-7Wrapper .btn:hover {
+    box-shadow: 3px -2px 0 2px #555;
+    transform: translate(-8px, 8px);
+}
+
+
+
+/* BUTTON 8 */
+.btn-8Wrapper {
+    background-color: #E80821;
+    perspective: 200px;
+}
+
+.btn-8Wrapper .btn {
+    box-shadow: 0 8px 10px -1px rgba(0, 0, 0, .3);
+    border-bottom: 4px solid #ddd;
+    transform: rotateX(15deg);
+    transition: box-shadow 1s, border-bottom 1s, transform .5s;
+}
+
+.btn-8Wrapper .btn:hover {
+    box-shadow: 0 2px 2px grey;
+    border-bottom: 3px solid #ddd;
+    transform: rotateX(0);
+}
+
+
+/* BUTTON 9 */
+.btn-9Wrapper {
+    background-color: #FF7816;
+}
+
+.btn-9Wrapper .btn {
+    opacity: 1;
+    transition: opacity .3s;    
+}
+
+.btn-9Wrapper .btn:hover {
+  opacity: .5;
+}
+
+
+/* BUTTON 10 */
+.btn-10Wrapper {
+    background-color: #179C00;
+}
+
+.btn-10Wrapper .btn:hover {
+  animation: squishyBtn 1s cubic-bezier(.37,-0.1,.36,1.35);
+}
+
+@keyframes squishyBtn {
+    55% {padding: 30px 10px;}
+    85% {padding: 10px 30px;}
+    100%{padding: 20px;}
+}
+
+
+/* BUTTON 11 */
+.btn-11Wrapper {
+    background-color: #000;
+}
+
+.btn-11Wrapper .btn:hover {
+    color: #fff;
+  animation: flickr_lights 1.5s infinite cubic-bezier(.29,.26,.62,.61);
+}
+
+@keyframes flickr_lights {
+    0% {background-color: #B57512;}
+    25% {background-color: #E84B00;}
+    50% {background-color: #3BEBAA;}
+    75%{background-color: #826334;}
+    100%{background-color: #12B54B;}
+}
+
+.btn-11Wrapper:hover {
+    background-color: #000;
+  animation: wrapr_lights 1.5s infinite cubic-bezier(.29,.26,.62,.61);
+}
+
+@keyframes wrapr_lights{
+    0% {background-color: #826334;}
+    25% {background-color: #3BEBAA;}
+    50% {background-color: #E84B00;}
+    75%{background-color: #12B54B;}
+    100%{background-color: #B57512;}
+}
+
+
+
+/* BUTTON 12 */
+.btn-12Wrapper {
+    background-color: #3BEBAA;
+}
+
+.btn-12Wrapper .btn:hover {
+  background-color: #E84B00;
+    color: #fff;
+  animation: krazy_corners 1.5s infinite cubic-bezier(.29,.26,.62,.61);
+}
+
+@keyframes krazy_corners {
+    0% {border-radius: 0 20px 20px 20px;}
+    20% {border-radius: 20px 0 20px 20px;}
+    40% {border-radius: 20px 20px 0 20px;}
+    60% {border-radius: 20px 20px 20px 0;}
+    80% {border-radius: 20px 20px 0 20px;}
+    100% {border-radius: 20px 0 20px 20px;}
+}

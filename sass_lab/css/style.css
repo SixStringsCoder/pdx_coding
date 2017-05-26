@@ -1,0 +1,130 @@
+@keyframes kaleidoscope {
+	0% {
+		background: #2196f3;
+	}
+
+	100% {
+		background: #9c27b0;
+	}
+}
+
+@keyframes kaleidoscope2 {
+	0% {
+		background: #9c27b0;
+	}
+
+	100% {
+		background: #2196f3;
+	}
+}
+
+.project-list div h2 {
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+li:nth-child(1) {
+	background: url("https://visualhunt.com/photos/xl/7/flower-bouquet-bunch-daisys.jpg");
+	width: 166px;
+	height: 118px;
+	list-style: none;
+	background-size: cover;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+li:nth-child(2) {
+	background: url("https://visualhunt.com/photos/l/7/sky-silhouette-star.jpg");
+	width: 166px;
+	height: 118px;
+	list-style: none;
+	background-size: cover;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+li:nth-child(3) {
+	background: url("https://visualhunt.com/photos/l/7/animal-kitten-pet.jpg");
+	width: 166px;
+	height: 118px;
+	list-style: none;
+	background-size: cover;
+}
+
+html, body {
+	margin: 0;
+}
+
+header, footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	height: 110vh;
+	margin: 0;
+	font-size: 1em;
+	padding: 10px;
+	color: #fff;
+	align-items: center;
+	animation: kaleidoscope 10s alternate infinite;
+}
+
+footer {
+	animation: kaleidoscope2 10s alternate  infinite;
+}
+
+div, article {
+	background: #efefef;
+	margin: 2% 10%;
+	padding: 2em;
+	border-radius: 20px;
+}
+
+.project-list h2 {
+	text-align: left;
+}
+
+p:nth-child(1) {
+	padding: 5px;
+	line-height: 150%;
+	font-family: 'Times', serif;
+	text-align: justify;
+}
+
+p:nth-child(2) {
+	padding: 5px;
+	line-height: 150%;
+	font-family: 'Times', serif;
+	text-align: justify;
+}
+
+p:nth-child(3) {
+	padding: 5px;
+	line-height: 150%;
+	font-family: 'Times', serif;
+	text-align: justify;
+}
+
+p:nth-child(4) {
+	padding: 5px;
+	line-height: 150%;
+	font-family: 'Times', serif;
+	text-align: justify;
+}
+
+p:nth-child(5) {
+	padding: 5px;
+	line-height: 150%;
+	font-family: 'Times', serif;
+	text-align: justify;
+}

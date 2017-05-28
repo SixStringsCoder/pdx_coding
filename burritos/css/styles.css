@@ -1,9 +1,233 @@
+
 body {
-    margin: 3%;
+    margin: 0;
+}
+
+/*--------------------
+      Fixed Header
+---------------------*/
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    bottom: auto;
+    width: 100vw;
+    background: rgba(175, 38, 0, 1);
+    box-shadow: 3px 1px 4px rgba(0, 0, 0, .6);
+    margin: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #fff;
+    font-family: Atma, Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 170, 0);
+    margin: .1em 0 .1em .6em;
 }
 
 
-ul {
-    list-style: none;
+/*--------------------------
+  FLEXBOX 3-Column Layout
+----------------------------*/
+#page_container {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#section_left {
+    width: 35vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_middle {
+    width: 65vw;
+    height: 150vh;
+    margin: 6vw 0 2vh .5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#section_right {
+    width: 35vw;
+    height: 150vh;
+    /*background: green;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/*-------------------
+ Left Side Section
+------------------- */
+
+#pic_w_cap {
+    width: 90%;
+    margin: 7.4vw 0 2vh .1vw;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+
+figure {
+    overflow: hidden;
+    margin: 19px;
+}
+
+figure img {
+    width: 80%;
+    margin: 15px 0px 5px 0;
+    border-radius: 7px;
+}
+
+figcaption {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: 'Atma', cursive, serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+
+/*--------------------
+ Middle Section Headers
+------------------- */
+
+h3 {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+h4 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+label {
+    margin: 10px;
+
+}
+
+.label_title {
+    font-weight: bold;
+}
+
+.included_top {
+    display: flex;
+    justify: space-around;
+}
+
+.included_vert {
+    display: flex;
+    flex-direction:  column;
+}
+
+
+
+/* Credit card infp ----------------------*/
+
+#customer-details label {
+    font-weight: bold;
+}
+
+
+input[type=text] {
+    width: 90%;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+[type=number] {
+    width: 26%;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+ }
+
+
+/* Credit card infp ----------------------*/
+
+#delivery {
+    display: flex;
+    flex-direction:  column;
+}
+
+
+.box {
+    width: 17px;
+    height: 17px;
+    content: '';
+    background: #ffffff;
+    border-radius: 0.21428571rem;
+    border: 1px solid #d4d4d5;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 30px;
+    background: #dddddd;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    transition: .5s;
+}
+
+button:hover {
+    background: #cacbcd;
+}
+
+
+/*--------------------
+  Right Side Section
+---------------------*/
+
+#total {
+    position: fixed;
+    top: 14%;
+    right: 5%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    padding: 10px 60px 10px;
+    background: darkgreen;
+    color: #ffffff;
+    border-radius: 1rem;
+    width: 12%;
+}
+
+#total_items {
+    list-style: circle;
+    padding: 1% 10% 20% ;
+    border-bottom: 1px solid white;
+}
+
+li {
+    margin: 10px 0;
+    /*align-self: flex-start;*/
+}
+
+
+
+/*--------------------
+        Footer
+---------------------*/
+footer {
+    margin: 15% 1% 2%;
+    border-top: 1px solid black;
 
 }

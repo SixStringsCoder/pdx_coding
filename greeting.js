@@ -17,3 +17,6 @@ function questions() {
 
     result(name, age);
 }
+
+
+questions();

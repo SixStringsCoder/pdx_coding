@@ -10,8 +10,8 @@
 
 ### Advanced ###
 
-# >>> snake_to_camel('this_is_snake_case')
-# 'ThisIsSnakeCase'
+>>> snake_to_camel('this_is_snake_case')
+'ThisIsSnakeCase'
 
 
 """
@@ -21,5 +21,15 @@ def which_case(snippet):
         return 'snake_case.'
     else:
         return 'CamelCase.'
+
+
+
+def snake_to_camel(makemecamel: str) -> str:
+    toList = makemecamel.split('_')
+
+    capetized = [word.capitalize() for word in toList]
+    camelized = ''.join(capetized)
+    return camelized
+
 
 

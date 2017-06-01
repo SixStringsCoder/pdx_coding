@@ -1,0 +1,103 @@
+
+body {
+    margin: 0;
+}
+
+
+
+
+/*--------------------------
+          FLEXBOX
+----------------------------*/
+#container {
+    width: 20vw;
+    height: 100vh;
+	margin: 0 auto;
+}
+
+
+
+/* Form----------------------*/
+
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+h3 {
+    background-color: #eee;
+    padding: 15px;
+    box-shadow: 0 0 2px grey;
+    margin-top: 15px;
+}
+
+label {
+    margin: 10px;
+
+}
+
+.label_title {
+    font-weight: bold;
+}
+
+
+button {
+    margin: 10px 10px;
+    padding: 20px 10px;
+    background: tomato;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    transition: .5s;
+	font-size: 1em;
+}
+
+button:hover {
+    background: red;
+	color: #fff;
+}
+
+
+
+/* Text Input color ----------------------*/
+
+
+input[type=text] {
+    width: 90%;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Text Input color ----------------------*/
+
+
+/*input[type=text] {*/
+	/*border: 1px solid grey;*/
+/*}*/
+
+input[type=text]:focus {
+    background-color: #eee;
+}
+
+input[type=text]:required:valid {
+    border: 2px solid green;
+}
+
+input[type=text]:required:invalid {
+    border: 1px solid yellow;
+}
+
+/*input[type=text]:required:invalid:after {*/
+	/*background-color: yellow;*/
+	/*width: 20px;*/
+	/*height: 10px;*/
+	/*color: black;*/
+	/*content: "Invalid Input";*/
+/*}*/
+
+
+
+

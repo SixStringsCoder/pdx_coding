@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Side Bar Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" type="text/css"  href="site.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+    <h3>Please fill out and submit.</h3>
+        <form>
+            <label>Name:<br>
+            <input type="text" pattern="[^0-9!@#$%*()&]+\s[^0-9!@#$%*()&]+" required placeholder="First Name Last Name">
+            </label><br>
+
+            <label>Date of Birth:<br>
+            <input type="text" pattern="^\d{4}-\d{2}-\d{2}" required placeholder="YYYY-MM-DD">
+            </label><br>
+
+            <label>Phone Number:<br>
+            <input type="text" pattern="\d{3}-\d{3}-\d{4}" required maxlength="12" placeholder="555-555-5555">
+            </label><br>
+
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>

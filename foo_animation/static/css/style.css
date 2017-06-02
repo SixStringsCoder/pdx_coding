@@ -1,0 +1,29 @@
+.fooWorking {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    /*transform: translateX(200px);*/
+    transition: 2s;
+    color: red;
+    font-size: 1em;
+}
+
+
+
+.fooVacation {
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    /*transform: translateX(-20px);*/
+    transition: 2s;
+    color: green;
+    font-size: 10em;
+}
+
+p {
+   position: absolute;
+    top: 50vh;
+    left: 20vw;
+    font-size: 3em;
+    font-weight: bold;
+}

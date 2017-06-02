@@ -1,0 +1,39 @@
+body {
+    background: #000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sm_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+
+}
+
+.square {
+    width: 500px;
+    height: 300px;
+    background-color: orange;
+    border-radius: 10%;
+    font-size: 4em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    margin-top: 100px;
+}

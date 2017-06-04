@@ -10,9 +10,9 @@ function colorPicker() {
     let $blue = Math.floor((Math.random() * 255) + 1);
     // make object of $RGB values
     return {
-        'red': $red,
-        'green': $green,
-        'blue': $blue
+        red: $red,
+        green: $green,
+        blue: $blue
     };
 }
 
@@ -22,8 +22,8 @@ function colorEffect() {
         function (event) {
             let hue = colorPicker();
             // Using tick notation use color placeholders to make random colors in square DIVs
-            $(this, '#marquee').css('background-color', `rgb(${hue.red}, ${hue.green}, ${hue.blue}`).css('transition', '.6s');
-            // Replace Heading <span> text with word populating DIV
+            $(this).css('background-color', `rgb(${hue.red}, ${hue.green}, ${hue.blue}`).css('transition', '.6s');
+            // Replace Heading <span> text with word populating DIV and change its color
             let $currentText = $(this).text();
             $('#marquee').text($currentText).css('color', `rgb(${hue.red}, ${hue.green}, ${hue.blue}`).css('transition', '.6s');
         });

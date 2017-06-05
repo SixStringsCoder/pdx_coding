@@ -1,6 +1,4 @@
-/*body {*/
-
-/*}*/
+/* BG and HEADER*/
 
 main {
     display: flex;
@@ -11,6 +9,7 @@ main {
     background-size: cover;
     height: 200vh;
     z-index: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -25,10 +24,10 @@ h1 {
     text-align: center;
     font-size: 3em;
     color: #000000;
-
 }
 
 
+/* ID  */
 #idCardContainer {
     margin-top: 10%;
     display: flex;
@@ -38,8 +37,8 @@ h1 {
 }
 
 .idCard {
-    width: 25%;
-    height: 26%;
+    width: 26%;
+    height: 27%;
     padding: 0 30px;
     margin: 0 4%;
     border-radius: 25px;
@@ -52,37 +51,49 @@ h1 {
     box-shadow: 0 1px 2px black;
 }
 
+
+/* ID Text */
 p {
     font-size: 1.3em;
-    color: #fff;
-}
-
-button {
-    position: fixed;
-    top: 22%;
-    right: 7%;
-    width: 200px;
-    height: 150px;
-    border-radius: 25px;
-    background-color: #F1231F;
-    font-size: 2em;
-    color: #fff;
-}
-
-button {
-	box-shadow: 0 8px 10px -1px rgba(0, 0, 0, .3);
-	border-bottom: 4px solid #ddd;
-	transition: box-shadow .3s, border-bottom .3s;
-}
-
-button:active {
-	box-shadow: 0 2px 2px grey;
-	border-bottom: 3px solid #ddd;
+    color: #222222;
 }
 
 
 span {
     font-size: 1.1em;
     font-weight: bold;
-    color: #222222;
+    color: #FFFFE5;
 }
+
+
+/* BUTTON */
+button {
+    position: fixed;
+    top: 18%;
+    right: 7%;
+    width: 250px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #F1231F;
+    font-size: 2em;
+    color: #fff;
+}
+
+button {
+	box-shadow: 0 5px 5px -1px rgba(0, 0, 0, .3);
+	border-bottom: 4px solid #ddd;
+	transition: box-shadow .3s, border-bottom .3s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+	box-shadow: 0 1px 1px grey;
+	border-bottom: 3px solid #ddd;
+    outline: none;
+}
+
+
+

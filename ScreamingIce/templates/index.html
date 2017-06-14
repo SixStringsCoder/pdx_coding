@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pyramid Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/stylesheet" href="style.css">
+</head>
+
+<body>
+
+    COMO TE LLAMAS 57
+
+    <p> {{ scream }}
+        {%  if request.user.is_autheticated %}
+            Hello, {{ request.user.username }}
+        {% endif %}
+    </p>
+
+
+<script></script>
+</body>
+</html>

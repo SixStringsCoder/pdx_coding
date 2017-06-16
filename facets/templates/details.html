@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+<section>
+    {% block content %}
+
+        {% if media.type == 'IMG' %}
+            <p><img src="{{ media.file.url }}"></p>
+        {% endif %}
+
+    {% endblock %}
+</section>
